@@ -35,289 +35,7 @@ img {
   height: auto;
 }
 
-/* Navigation Bar */
-/* ======= Global Styles ======= */
-nav {
-  width: 100%;
-  padding: 10px;
-}
-
-/* ======= Navigation Menu List ======= */
-#menuList {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  width: 100%;
-  flex-wrap: wrap;
-  padding-top: 10px;
-  padding-bottom: 15px;
-}
-
-#menuList .logo img {
-  max-width: 120px;
-}
-
-/* ======= Menu Sections ======= */
-.menu-section {
-  display: flex;
-  align-items: center;
-}
-
-.menu-section.left,
-.menu-section.right {
-  flex-basis: 20%;
-  justify-content: center;
-}
-
-.menu-section.left {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.menu-section.right {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-/* ======= Menu Icon ======= */
-
-.menu-icon.left-icon,
-.menu-icon.right-icons {
-  display: none;
-}
-
-/* ======= Language Menu ======= */
-.lang-menu {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-}
-
-.lang-menu .selected-lang {
-  display: flex;
-  cursor: pointer;
-  width: 18px;
-  height: 18px;
-  align-items: center;
-}
-
-.lang-menu ul {
-  margin: 0;
-  padding: 0;
-  display: none;
-  background-color: var(--BG-1-COLOR);
-  border: 0.2px solid var(--BORDER-1-COLOR);
-  box-shadow: 0 0 1px var(--BORDER-1-COLOR);
-  position: absolute;
-  top: 35px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 70px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.lang-menu ul li {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-}
-
-.lang-menu ul li a {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 5px;
-  font-size: 12px;
-  color: var(--TEXT-1-COLOR);
-}
-
-.lang-menu ul li:hover {
-  background-color: var(--BG-3-COLOR);
-}
-
-.lang-menu ul li a:before {
-  content: "";
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  vertical-align: middle;
-  margin-right: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.de:before {
-  background-image: url(images/de_flag.png);
-}
-
-.en:before {
-  background-image: url(images/en_flag.png);
-}
-
-.fr:before {
-  background-image: url(images/fr_flag.png);
-}
-
-.ar:before {
-  background-image: url(images/ar_flag.png);
-}
-
-/* ======= Search Bar ======= */
-.searcher {
-  display: grid;
-  place-items: center;
-}
-
-.search {
-  position: relative;
-  width: 150px;
-  height: 30px;
-  background-color: var(--BODY-COLOR);
-  border-bottom: 0.2px solid var(--BORDER-1-COLOR);
-  padding: 0 10px;
-  display: flex;
-  align-items: center;
-}
-
-.search__input {
-  border: none;
-  outline: none;
-  width: calc(100% - 36px);
-  height: 100%;
-  font-size: 10px;
-  font-weight: 500;
-  color: var(--TEXT-1-COLOR);
-  background-color: var(--BODY-COLOR);
-}
-
-.search__input::placeholder {
-  color: var(--TEXT-2-COLOR);
-  opacity: 1;
-}
-
-.search__button {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  position: absolute;
-  right: 16px;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-}
-
-.search__icon {
-  font-size: 12px;
-  color: var(--TEXT-2-COLOR);
-}
-
-.search__input::-webkit-search-decoration,
-.search__input::-webkit-search-cancel-button {
-  display: none;
-}
-
-.search__close {
-  position: absolute;
-  right: 36px;
-  width: 12px;
-  height: 12px;
-  color: var(--TEXT-2-COLOR);
-  font-size: 10px;
-  cursor: pointer;
-  display: none;
-}
-
-/* ======= Account Section ======= */
-.account {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  width: 85px;
-  height: 28px;
-  background-color: var(--BG-1-COLOR);
-  border-bottom: 0.2px solid var(--BORDER-1-COLOR);
-  border-radius: 20px;
-  padding: 0 10px;
-}
-
-.account i {
-  color: var(--TEXT-2-COLOR);
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-}
-
-.account p {
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
-
-.account p a {
-  text-decoration: none;
-  color: var(--TEXT-2-COLOR);
-  font-size: 11px;
-  display: flex;
-  align-items: center;
-}
-
-/* ======= Cart Section ======= */
-.cart {
-  width: 25px;
-  height: 25px;
-  background-color: var(--BG-1-COLOR);
-  border: 0.2px solid var(--BORDER-1-COLOR);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  overflow: hidden;
-}
-
-.cart i {
-  color: var(--TEXT-2-COLOR);
-  font-size: 12px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-}
-
-/* ======= Menu Subsection ======= */
-.menu-sub {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  gap: 90px;
-  padding-bottom: 8px;
-}
-
-#menuListSub a {
-  text-decoration: none;
-  color: var(--TEXT-2-COLOR);
-  font-size: 12px;
-}
-
-#menuListSub a:hover {
-  color: var(--TEXT-1-COLOR);
-}
-
-/* ======= Header Section ======= */
+/* ======= Header Body Styling ======= */
 .header-body {
   position: relative;
   width: 100%;
@@ -328,15 +46,131 @@ nav {
   border-radius: 10px;
 }
 
-.header-logo {
+/* ======= Navigation Styling ======= */
+nav {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  border: 0.2px solid var(--BORDER-1-COLOR);
+  box-shadow: 0 0 10px var(--BORDER-1-COLOR);
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
+  margin: 0 auto;
+  padding: 10px 30px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  border-radius: 15px;
+  position: relative;
 }
 
-.header-logo img {
-  width: 42px;
+/* ======= Navigation Menu List ======= */
+#menuList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+}
+
+/* ======= Left Section (Logo) ======= */
+.left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.left img {
+  width: 30px;
+  height: 30px;
+  background-color: var(--BG-3-COLOR);
+  border: 0.2px solid var(--BORDER-1-COLOR);
+  box-shadow: 0 0 5px var(--BORDER-1-COLOR);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ======= Middle Section (Navigation Links) ======= */
+.middle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.middle a {
+  text-decoration: none;
+  color: var(--TEXT-2-COLOR);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.middle a:hover {
+  color: var(--TEXT-1-COLOR);
+}
+
+/* ======= Right Section (Login & Cart) ======= */
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ======= Login Button Styling ======= */
+.right .login-main {
+  background-color: var(--BORDER-1-COLOR);
+  padding: 5px;
+  border-radius: 50px;
+  position: relative;
+  left: 1%;
+}
+
+.right .login {
+  background-color: var(--TEXT-2-COLOR);
+  border-radius: 50px;
+}
+
+.right .login a {
+  color: var(--BG-3-COLOR);
+  font-size: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  border: 0.2px solid var(--BORDER-1-COLOR);
+  box-shadow: 0 0 5px var(--BORDER-1-COLOR);
+  padding: 5px 12px;
+  border-radius: 50px;
+  display: flex;
+}
+
+/* ======= Cart Button Styling ======= */
+.right .cart-main {
+  background-color: var(--BORDER-1-COLOR);
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.right .cart {
+  background-color: var(--TEXT-2-COLOR);
+  border-radius: 50px;
+}
+
+.right .cart a {
+  color: var(--BG-3-COLOR);
+  font-size: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  border: 0.2px solid var(--BORDER-1-COLOR);
+  box-shadow: 0 0 5px var(--BORDER-1-COLOR);
+  padding: 5px 6px;
+  border-radius: 50px;
+  display: flex;
 }
 
 /* ======= Swiper (Scrolling Promotions) ======= */
@@ -346,8 +180,8 @@ nav {
   border: 0.2px solid var(--BORDER-1-COLOR);
   box-shadow: 0 0 5px var(--BORDER-1-COLOR);
   border-radius: 30px;
-  margin-bottom: 1.5rem;
   position: relative;
+  margin-bottom: 800px;
 }
 
 .info-slide {
@@ -391,11 +225,19 @@ nav {
   color: var(--TEXT-1-COLOR);
 }
 
-/* ======= Mockup Section ======= */
+/* ======= Header Main Styling ======= */
+.header-main {
+  margin-top: 60%;
+  text-align: center;
+  overflow: visible;
+}
+
+/* ======= Mockup Section Styling ======= */
 .mockup {
   overflow: visible;
 }
 
+/* ======= Phone Mockup Styling ======= */
 .phone {
   position: absolute;
   top: 60%;
@@ -410,6 +252,20 @@ nav {
   overflow: hidden;
 }
 
+.phone::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 16px;
+  background: var(--TEXT-2-COLOR);
+  opacity: 0.7;
+  border-radius: 50px;
+}
+
+/* ======= Header Image Styling ======= */
 .phone .header-img {
   position: absolute;
   top: 20%;
@@ -440,6 +296,7 @@ nav {
   justify-content: center;
 }
 
+/* ======= Status Bar Styling ======= */
 .header-icons {
   position: relative;
   display: flex;
@@ -479,19 +336,7 @@ nav {
   font-size: 14px;
 }
 
-.phone::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 20px;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 16px;
-  background: var(--TEXT-2-COLOR);
-  opacity: 0.7;
-  border-radius: 50px;
-}
-
+/* ======= Header Sections Styling ======= */
 .header-sections {
   position: relative;
   display: flex;
@@ -534,6 +379,7 @@ nav {
   border-radius: 50%;
 }
 
+/* ======= Mockup Card Styling ======= */
 .mockup-card {
   position: relative;
   display: flex;
@@ -570,7 +416,7 @@ nav {
 
 .mockup-section {
   background-color: var(--BG-3-COLOR);
-  border: 0.2px solid var(--BORDER-1-COLOR);
+  border: 1px solid var(--BORDER-1-COLOR);
   box-shadow: 0 -5px -5px var(--BORDER-1-COLOR);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -590,12 +436,13 @@ nav {
 
 .mockup-sub {
   margin-top: 2.5%;
-  opacity: 0.7;
+  opacity: 0.75;
   color: var(--TEXT-2-COLOR);
   font-size: 10px;
   font-weight: 450;
 }
 
+/* ======= Carousel (Scrolling Content) Styling ======= */
 .carousel {
   max-width: 90%;
   height: auto;
@@ -704,14 +551,7 @@ nav {
   opacity: 0.8;
 }
 
-/* ======= Header Main Section ======= */
-.header-main {
-  margin-top: 60%;
-  text-align: center;
-  overflow: visible;
-}
-
-/* ======= Product Cards (Log Sections) ======= */
+/* ======= Product Cards (Log Sections) Styling ======= */
 .log1,
 .log2,
 .log3,
@@ -724,12 +564,12 @@ nav {
 
 .log1 {
   left: 10%;
-  top: 32%;
+  top: 34%;
 }
 
 .log2 {
   left: 73%;
-  top: 32%;
+  top: 34%;
 }
 
 .log3 {
@@ -806,7 +646,7 @@ nav {
   transform: rotate(5deg);
 }
 
-/* ======= Decorative Dot Icons ======= */
+/* ======= Decorative Elements Styling ======= */
 .log-dot {
   display: flex;
   align-items: center;
@@ -818,7 +658,7 @@ nav {
   border: 0.2px solid var(--BORDER-1-COLOR);
   box-shadow: 0 0 2px var(--BORDER-1-COLOR);
   border-radius: 50%;
-  padding-top: 0.5px;
+  padding-top: 1px;
   padding-left: 0.2px;
 }
 

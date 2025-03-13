@@ -51,90 +51,36 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul id="menuList">
-          <div class="menu-section left">
-            <div class="menu-icon left-icon">
-              <p class="icon-1">
-                <i class="fa-solid fa-bars"></i>
-              </p>
-            </div>
-
-            <div class="lang-menu">
-              <div class="selected-lang">
-                <img src="images/en_flag.png" alt="" />
-              </div>
-              <ul>
-                <li>
-                  <a href="#" class="de">DE</a>
-                </li>
-                <li>
-                  <a href="" class="en">EN</a>
-                </li>
-                <li>
-                  <a href="" class="fr">FR</a>
-                </li>
-                <li>
-                  <a href="" class="ar">AR</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="searcher">
-              <form
-                action="https://www.google.com/search"
-                class="search"
-                id="search-bar"
-              >
-                <input
-                  type="search"
-                  placeholder="Search"
-                  name="q"
-                  class="search__input"
-                />
-
-                <div class="search__button" id="search-button">
-                  <i class="ri-search-2-line search__icon"></i>
-                  <i class="ri-close-line search__close"></i>
-                </div>
-              </form>
-            </div>
-          </div>
-
-          <div class="menu-section logo">
-            <li>
-              <a href="./faq.html"
-                ><img src="./images/logo2.png" alt="Logo"
-              /></a>
-            </li>
-          </div>
-
-          <div class="menu-section right">
-            <div class="account">
-              <i class="bi bi-person"></i>
-              <p><a href="#">Login</a></p>
-            </div>
-
-            <div class="cart">
-              <i class="bi bi-bag-heart"></i>
-            </div>
-          </div>
-        </ul>
-
-        <ul id="menuListSub">
-          <div class="menu-sub">
-            <li><a href="./about.html">Shop</a></li>
-            <li><a href="./collection.html">About</a></li>
-            <li><a href="./blog.html">Contact</a></li>
-            <li><a href="./blog.html">Impact</a></li>
-            <li><a href="./blog.html">Finder</a></li>
-            <li><a href="./about.html">Comfort</a></li>
-          </div>
-        </ul>
-      </nav>
-
       <section class="header-body">
-        <div class="header-logo"><img src="images/logo.png" alt="Logo" /></div>
+        <nav>
+          <ul id="menuList">
+            <div class="menu-section left">
+              <a href="#"><img src="./images/logo.png" alt="Logo" /></a>
+            </div>
+
+            <div class="menu-section middle">
+              <li><a href="./about.html">Shop</a></li>
+              <li><a href="./about.html">Club</a></li>
+              <li><a href="./collection.html">About</a></li>
+              <li><a href="./blog.html">Finder</a></li>
+              <li><a href="./blog.html">Impact</a></li>
+            </div>
+
+            <div class="menu-section right">
+              <div class="login-main">
+                <div class="login">
+                  <a href="#">Login</a>
+                </div>
+              </div>
+
+              <div class="cart-main">
+                <div class="cart">
+                  <a href="#"><i class="bi bi-bag"></i></a>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </nav>
 
         <section class="header-info">
           <div class="swiper mySwiper infoSwiper">
@@ -169,7 +115,7 @@
 
               <div class="mockup-card">
                 <div class="mockup-image">
-                  <img src="./images/logo.png" alt="">
+                  <img src="./images/logo.png" alt="" />
                 </div>
 
                 <div class="mockup-section">
@@ -177,9 +123,7 @@
                     <p>Rare Beauty</p>
                   </div>
 
-                  <div class="mockup-sub">
-                    founded by Selena Gomez
-                  </div>
+                  <div class="mockup-sub">founded by Selena Gomez</div>
                   <div class="swiper carouselSwiper carousel">
                     <div class="swiper-wrapper carouselWrapper">
                       <div class="swiper-slide header-drip">
@@ -195,14 +139,16 @@
                                 <p>Body Lotion</p>
                               </div>
                               <div class="drip-sub">
-                                <div class="sub-icon"><i class="bi bi-bag-heart"></i></div>
+                                <div class="sub-icon">
+                                  <i class="bi bi-bag-heart"></i>
+                                </div>
                                 <div class="sub-text">most used</div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                  
+
                       <div class="swiper-slide header-drip">
                         <div class="header-drip1">
                           <div class="drip-img1">
@@ -216,7 +162,9 @@
                                 <p>Body Wash</p>
                               </div>
                               <div class="drip-sub">
-                                <div class="sub-icon"><i class="bi bi-bag-heart"></i></div>
+                                <div class="sub-icon">
+                                  <i class="bi bi-bag-heart"></i>
+                                </div>
                                 <div class="sub-text">most used</div>
                               </div>
                             </div>
@@ -228,7 +176,7 @@
                         <div class="header-drip1">
                           <div class="drip-img1">
                             <div class="drip-img">
-                              <img src="images/dripimg5.jpg" alt="" />
+                              <img src="images/dripimg3.png" alt="" />
                             </div>
                           </div>
                           <div class="drip-text">
@@ -237,7 +185,9 @@
                                 <p>Body Collection</p>
                               </div>
                               <div class="drip-sub">
-                                <div class="sub-icon"><i class="bi bi-bag-heart"></i></div>
+                                <div class="sub-icon">
+                                  <i class="bi bi-bag-heart"></i>
+                                </div>
                                 <div class="sub-text">most used</div>
                               </div>
                             </div>
@@ -245,14 +195,14 @@
                         </div>
                       </div>
                     </div>
-                  
+
                     <div class="swiper-pagination bullets"></div>
                   </div>
                 </div>
               </div>
-              
+
               <div class="header-img">
-                <img src="images/img5.png" alt="" />
+                <img src="images/headerimg.png" alt="" />
               </div>
 
               <div class="header-back-img">
@@ -332,7 +282,7 @@
 
       const pauseBtn = document.getElementById("pauseBtn");
       let isPaused = false;
-      
+
       pauseBtn.addEventListener("click", function () {
         if (isPaused) {
           infoSwiper.autoplay.start();
@@ -345,8 +295,8 @@
         }
         isPaused = !isPaused;
       });
-    
-      // Carousel Swiper 
+
+      // Carousel Swiper
       var carouselSwiper = new Swiper(".carouselSwiper", {
         loop: true,
         slidesPerView: 2,
@@ -357,8 +307,7 @@
           dynamicBullets: true,
           dynamicMainBullets: 3,
         },
-      });   
+      });
     </script>
-        
   </body>
 </html>
