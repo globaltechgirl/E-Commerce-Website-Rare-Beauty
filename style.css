@@ -44,6 +44,7 @@ img {
   background-color: var(--BG-3-COLOR);
   border: 0.2px solid var(--BORDER-1-COLOR);
   border-radius: 10px;
+  overflow: hidden;
 }
 
 /* ======= Navigation Styling ======= */
@@ -58,7 +59,7 @@ nav {
   align-items: center;
   margin: 0 auto;
   padding: 10px 30px;
-  margin-top: 20px;
+  margin-top: 0.9rem;
   margin-bottom: 60px;
   border-radius: 15px;
   position: relative;
@@ -147,6 +148,10 @@ nav {
   display: flex;
 }
 
+.menu {
+  display: none;
+}
+
 /* ======= Cart Button Styling ======= */
 .right .cart-main {
   background-color: var(--BORDER-1-COLOR);
@@ -181,7 +186,7 @@ nav {
   box-shadow: 0 0 5px var(--BORDER-1-COLOR);
   border-radius: 30px;
   position: relative;
-  margin-bottom: 800px;
+  margin-bottom: 67%;
 }
 
 .info-slide {
@@ -223,6 +228,107 @@ nav {
 
 .pause-button.paused i {
   color: var(--TEXT-1-COLOR);
+}
+
+@media only screen and (max-width: 640px) {
+  nav {
+    width: 100%;
+    margin-top: 0.1rem;
+    margin-bottom: 37rem;
+    padding: 8px 18px;
+  }
+
+  .right .menu {
+    display: block;
+    background-color: var(--TEXT-2-COLOR);
+    border-radius: 50px;
+  }
+
+  .right .menu a {
+    color: var(--BG-3-COLOR);
+    font-size: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border: 0.2px solid var(--BORDER-1-COLOR);
+    box-shadow: 0 0 5px var(--BORDER-1-COLOR);
+    padding: 5px 12px;
+    border-radius: 50px;
+    display: flex;
+  }
+
+  .phone {
+    width: 90% !important;
+    height: 70% !important;
+    box-shadow: 0 0 30px var(--BORDER-1-COLOR);
+    top: 50% !important;
+    margin-bottom: 0px !important;
+  }
+
+  .mockup-card {
+    top: 12% !important;
+  }
+
+  .phone .header-img {
+    top: 28% !important;
+  }
+
+  .phone .header-img img {
+    width: 65% !important;
+    overflow: visible;
+  }
+
+  .header-back-img {
+    top: 30rem !important;
+    width: 105% !important;
+  }
+
+  .carousel {
+    max-width: 100% !important;
+  }
+
+  .header-drip {
+    max-width: 130px !important;
+    margin-left: 6% !important;
+    margin-top: 1rem !important;
+    display: flex;
+    
+  }
+
+  .drip-main {
+    font-size: 9px !important;
+  }
+
+  .drip-sub {
+    font-size: 7px !important;
+  }
+
+  .bullets,
+  .middle a,
+  .right .login,
+  .header-info,
+  .log1,
+  .log2,
+  .log3,
+  .log4,
+  .log-dot {
+    display: none !important;
+  }
+}
+
+@media not all and (max-width: 468px) and (max-width: 640px) {
+  .mockup-main {
+    margin-top: 2% !important;
+  }
+
+  .mockup-sub {
+    margin-top: 2% !important;
+  }
+
+  .header-back-img {
+    top: 35rem !important;
+  }
 }
 
 /* ======= Header Main Styling ======= */
@@ -386,6 +492,7 @@ nav {
   flex-direction: column;
   align-items: center;
   top: 10%;
+  max-width: 100% !important;
 }
 
 .mockup-image {
@@ -415,7 +522,7 @@ nav {
 }
 
 .mockup-section {
-  background-color: var(--BG-3-COLOR);
+  background-color: transparent;
   border: 1px solid var(--BORDER-1-COLOR);
   box-shadow: 0 -5px -5px var(--BORDER-1-COLOR);
   border-top-left-radius: 15px;
@@ -423,7 +530,7 @@ nav {
   border-bottom: none;
   padding-top: 20px;
   text-align: center;
-  max-width: 100%;
+  width: 100%;
 }
 
 .mockup-main {
