@@ -69,9 +69,13 @@
             <div class="menu-section right">
               <div class="login-main">
                 <div class="menu">
-                 <a href="#">Menu</a>
+                  <a href="#">Menu</a>
                 </div>
-      
+
+                <div class="user">
+                  <a href="#"><i class="bi bi-person"></i></a>
+                </div>
+
                 <div class="login">
                   <a href="#">Login</a>
                 </div>
@@ -198,6 +202,52 @@
                           </div>
                         </div>
                       </div>
+
+                      <div class="swiper-slide header-drip">
+                        <div class="header-drip1">
+                          <div class="drip-img1">
+                            <div class="drip-img">
+                              <img src="images/dripimg4.png" alt="" />
+                            </div>
+                          </div>
+                          <div class="drip-text">
+                            <div class="drip-info">
+                              <div class="drip-main">
+                                <p>Soothe Pen</p>
+                              </div>
+                              <div class="drip-sub">
+                                <div class="sub-icon">
+                                  <i class="bi bi-bag-heart"></i>
+                                </div>
+                                <div class="sub-text">most used</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide header-drip">
+                        <div class="header-drip1">
+                          <div class="drip-img1">
+                            <div class="drip-img">
+                              <img src="images/dripimg5.png" alt="" />
+                            </div>
+                          </div>
+                          <div class="drip-text">
+                            <div class="drip-info">
+                              <div class="drip-main">
+                                <p>Rare Batch</p>
+                              </div>
+                              <div class="drip-sub">
+                                <div class="sub-icon">
+                                  <i class="bi bi-bag-heart"></i>
+                                </div>
+                                <div class="sub-text">most used</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
 
                     <div class="swiper-pagination bullets"></div>
@@ -301,17 +351,47 @@
       });
 
       // Carousel Swiper
-      var carouselSwiper = new Swiper(".carouselSwiper", {
-        loop: true,
-        slidesPerView: 2,
-        spaceBetween: 10,
-        pagination: {
-          el: ".bullets",
-          clickable: true,
-          dynamicBullets: true,
-          dynamicMainBullets: 3,
-        },
-      });
+      function initCarouselSwiper() {
+        if (window.carouselSwiper) {
+          window.carouselSwiper.destroy(true, true);
+        }
+
+        if (
+          window.matchMedia("(min-width: 500px) and (max-width: 640px)").matches
+        ) {
+          console.log("Initializing Swiper for 550px - 640px");
+
+          window.carouselSwiper = new Swiper(".carouselSwiper", {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+              el: ".bullets",
+              clickable: true,
+              dynamicBullets: true,
+              dynamicMainBullets: 3,
+            },
+          });
+        } else {
+          console.log("Initializing Swiper for larger screens");
+
+          window.carouselSwiper = new Swiper(".carouselSwiper", {
+            loop: true,
+            slidesPerView: 2,
+            spaceBetween: 10,
+            pagination: {
+              el: ".bullets",
+              clickable: true,
+              dynamicBullets: true,
+              dynamicMainBullets: 3,
+            },
+          });
+        }
+      }
+
+      initCarouselSwiper();
+
+      window.addEventListener("resize", initCarouselSwiper);
     </script>
   </body>
 </html>
